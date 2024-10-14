@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Input } from 'antd';
 import { MedicineBoxOutlined } from '@ant-design/icons';
 import CustomSelect from '../components/CustomSelect';
+import CustomTable from '../components/CustomTable';
 
 function Organization() {
   const [regionId, SetRegionId] = useState(null)
@@ -35,6 +36,9 @@ function Organization() {
       <div className='flex mt-5 items-center space-x-5'>
         <Input className='w-[350px]'size='large'type='text'allowClear placeholder='Searching...'/>
         <CustomSelect placeholder={"Tanlash..."}  setChooseId={SetRegionId}  options={regionList}/>
+      </div>
+      <div className='pt-5'>
+      <CustomTable/>
       </div>
     </div>
   );
