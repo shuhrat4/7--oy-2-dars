@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { AppstoreOutlined, BankOutlined, LineOutlined,     } from '@ant-design/icons';
+import { AppstoreOutlined, BankOutlined, LineOutlined,} from '@ant-design/icons';
 import { Menu } from 'antd';
+import { Link } from 'react-router-dom';
 const items = [
     {
         key: '1',
@@ -9,7 +10,7 @@ const items = [
         children: [
             {
                 key: '11',
-                label: 'Tashkilotlar bolimi ',
+                label: <Link to={'/'}>Tashkilotlar bolimi</Link>,
                 icon:<LineOutlined />
             },
        
@@ -22,12 +23,12 @@ const items = [
         children: [
             {
                 key: '21',
-                label: 'Poytaxt foydalanuvchilari ',
+                label: <Link to={'/capital-users'}>Poytaxt foydalanuvchilar</Link>,
                 icon:<LineOutlined />
             },
             {
                 key: '22',
-                label: 'Viloyat Foydalanuvchilari ',
+                label: <Link to={'/region-users'}>Viloyat foydalanuvchilar</Link>,
                 icon:<LineOutlined />
             },
           

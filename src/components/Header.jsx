@@ -3,7 +3,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className='py-8 bg-[#001529] px-10 border-b[2px] border-white'>
+    <div className='py-8 bg-[#001529] px-10 border-b-[2px] border-white'>
         <div className='flex items-center space-x-10'>
         <GithubOutlined className='scale-[3] text-white'/>
         <h2 className='text-[22px] text-white font-semibold'>Admin panel</h2>

@@ -1,9 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { Button, Input } from 'antd';
+import { MedicineBoxOutlined } from '@ant-design/icons';
+import CustomSelect from '../components/CustomSelect';
 
 function Organization() {
   return (
-    <div>Organization</div>
-  )
+    <div className='p-5'>
+      <div className='flex items-center justify-between'>
+        <div>
+          <h2 className='font-bold text-[25px]'>Tashkilotlar</h2>
+          <span className='text-[15px] pl-1 text-slate-400'>tashkilot (0)</span>
+        </div>
+        <Button icon={<MedicineBoxOutlined />} size='large' type='primary'>
+          Qo'shish
+        </Button>
+      </div>
+      <div className='flex mt-5 items-center space-x-5'>
+        <Input 
+          className='w-[350px]' 
+          size='large' 
+          type='text' 
+          allowClear 
+          placeholder='Searching...' 
+        />
+        <CustomSelect />
+      </div>
+    </div>
+  );
 }
 
-export default Organization
+export default Organization;

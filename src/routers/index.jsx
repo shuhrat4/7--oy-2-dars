@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Organization, Users } from '../pages';
+
+const Organization = React.lazy(() => import('../pages/Organization'));
+const CapitalUsers = React.lazy(() => import('../pages/CapitalUsers'));
+const RegionUsers = React.lazy(() => import('../pages/RegionUsers'));
 
 function CustomRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<Organization />} />
-      <Route path="/users" element={<Users />} />
-    </Routes>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Organization />} />
+        <Route path="/capital-users" element={<CapitalUsers />} />
+        <Route path="/region-users" element={<RegionUsers />} />
+      </Routes>
+    </Suspense>
   );
 }
 
