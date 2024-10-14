@@ -1,12 +1,9 @@
 import React from 'react';
 import { Select } from 'antd';
 
-const CustomSelec  = ({placeholder}) => {
+const CustomSelec  = ({placeholder, options, setChooseId}) => {
   const onChange = (value) => {
-  console.log(`selected ${value}`);
-};
-const onSearch = (value) => {
-  console.log('search:', value);
+    setChooseId(`selected ${value}`);
 };
 return(
   <Select
@@ -17,21 +14,7 @@ return(
   placeholder={placeholder}
   optionFilterProp="label"
   onChange={onChange}
-  onSearch={onSearch}
-  options={[
-    {
-      value: 'jack',
-      label: 'Jack',
-    },
-    {
-      value: 'lucy',
-      label: 'Lucy',
-    },
-    {
-      value: 'tom',
-      label: 'Tom',
-    },
-  ]}
+  options={options}  
 />
 )
 };
