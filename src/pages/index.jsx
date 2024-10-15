@@ -1,5 +1,6 @@
-import Organization from './Organization';
-import Capital from './CapitalUsers';
-import RegionUsers from './RegionUsers';
+import CapitalUser from "./CapitalUser";
+import Organization from "./Organization";
+import OrganizationMore from "./OrganizationMore";
+import RegionUser from "./RegionUser";
 
-export { Organization, Capital, RegionUsers};
+export {Organization, RegionUser, CapitalUser, OrganizationMore}

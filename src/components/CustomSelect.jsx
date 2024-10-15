@@ -1,21 +1,37 @@
 import React from 'react';
 import { Select } from 'antd';
 
-const CustomSelec  = ({placeholder, options, setChooseId}) => {
-  const onChange = (value) => {
-    setChooseId(`selected ${value}`);
+const CustomSelect = ({placeholder, width, option, setChooseId, setIsLoading, setLebalValue}) => {
+    const onChange = (value, obj) => {
+        console.log(obj);
+        
+        if(setIsLoading){
+            setIsLoading(true)
+            value ? setTimeout(() => setChooseId(`${value}`), 800) : setTimeout(() => setChooseId(``), 800)
+
+        }
+        if(setLebalValue){
+            setLebalValue(obj.label)
+            setChooseId(value)
+        }
+        else{
+            setChooseId(value)
+        }
+        
+    };
+    
+    return (
+        <Select
+            style={{width: `${width}`}}
+            size='large'
+            allowClear
+            showSearch
+            placeholder={placeholder}
+            optionFilterProp="label"
+            onChange={onChange}
+            options={option}
+        />
+    )
 };
-return(
-  <Select
-  className='w-[350px]'
-  showSearch
-  allowClear
-  size='large'
-  placeholder={placeholder}
-  optionFilterProp="label"
-  onChange={onChange}
-  options={options}  
-/>
-)
-};
-export default CustomSelec;
+export default CustomSelect;
+
