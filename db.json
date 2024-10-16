@@ -42,6 +42,39 @@
       "regionPlace": "Toshkent",
       "address": "Kichik Xalqa Yo'li 17",
       "createdAt": "2009-04-26"
+    },
+    {
+      "id": "61ed",
+      "key": 8,
+      "companyName": "asdesF",
+      "inn": "234567",
+      "status": "2",
+      "regionId": 3,
+      "regionPlace": "Xorazm vilayati",
+      "address": "wadfewg",
+      "createdAt": "2024-10-09"
+    },
+    {
+      "id": "8cd2",
+      "key": 25,
+      "companyName": "efvdfbgb",
+      "inn": "2345432",
+      "status": "1",
+      "regionId": 2,
+      "regionPlace": "Samarqand vilayati",
+      "address": "23454",
+      "createdAt": "2024-10-15"
+    },
+    {
+      "id": "2953",
+      "key": 69,
+      "companyName": "wdfwert",
+      "inn": "232452",
+      "status": "2",
+      "regionId": 2,
+      "regionPlace": "Samarqand vilayati",
+      "address": "234543",
+      "createdAt": "2024-10-09"
     }
   ]
 }
