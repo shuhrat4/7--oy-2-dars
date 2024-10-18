@@ -11,17 +11,6 @@
       "id": "2"
     },
     {
-      "id": "183a",
-      "key": 64,
-      "companyName": "w",
-      "inn": "12345678",
-      "status": "2",
-      "regionId": 3,
-      "regionPlace": "Xorazm vilayati",
-      "address": "nlomi",
-      "createdAt": "2015-06-19"
-    },
-    {
       "key": 17,
       "companyName": "mohirjon",
       "inn": "12345",
