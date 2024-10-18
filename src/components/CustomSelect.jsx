@@ -1,9 +1,8 @@
 import React from 'react';
 import { Select } from 'antd';
 
-const CustomSelect = ({placeholder, width, option, setChooseId, setIsLoading, setLebalValue}) => {
+const CustomSelect = ({placeholder, width, option, chooseId, setChooseId, setIsLoading, setLebalValue}) => {
     const onChange = (value, obj) => {
-        console.log(obj);
         
         if(setIsLoading){
             setIsLoading(true)
@@ -14,14 +13,15 @@ const CustomSelect = ({placeholder, width, option, setChooseId, setIsLoading, se
             setLebalValue(obj.label)
             setChooseId(value)
         }
-        else{
-            setChooseId(value)
-        }
+        // else{
+        //     setChooseId(value)
+        // }
         
     };
     
     return (
         <Select
+            value={chooseId}
             style={{width: `${width}`}}
             size='large'
             allowClear

@@ -1,80 +1,45 @@
 {
   "organization": [
     {
-      "key": "1",
-      "id": "1",
-      "companyName": "Najot Talim",
-      "inn": "222333658",
-      "status": "1",
-      "regionId": "1",
-      "regionPlace": "Tashkent",
-      "address": "Chilonzor 9kv",
-      "createdAt": "05.11.2018"
-    },
-    {
-      "key": "2",
-      "id": "2",
+      "key": 50,
       "companyName": "HardWork",
       "inn": "112333658",
       "status": "2",
       "regionId": "2",
-      "regionPlace": "Samarqand",
       "address": "Chilonzor 9kv",
-      "createdAt": "05.11.2015"
+      "createdAt": "2015-11-07",
+      "id": "2"
     },
     {
-      "id": "424b",
-      "key": 41,
-      "companyName": "sw",
+      "id": "183a",
+      "key": 64,
+      "companyName": "w",
       "inn": "12345678",
-      "status": "1",
-      "regionId": 3,
-      "address": "33",
-      "createdAt": "2024-10-04"
-    },
-    {
-      "id": "7167",
-      "key": 63,
-      "companyName": "Turin polytechnic university",
-      "inn": "123456789",
-      "status": "1",
-      "regionId": 1,
-      "regionPlace": "Toshkent",
-      "address": "Kichik Xalqa Yo'li 17",
-      "createdAt": "2009-04-26"
-    },
-    {
-      "id": "61ed",
-      "key": 8,
-      "companyName": "asdesF",
-      "inn": "234567",
       "status": "2",
       "regionId": 3,
       "regionPlace": "Xorazm vilayati",
-      "address": "wadfewg",
-      "createdAt": "2024-10-09"
+      "address": "nlomi",
+      "createdAt": "2015-06-19"
     },
     {
-      "id": "8cd2",
-      "key": 25,
-      "companyName": "efvdfbgb",
-      "inn": "2345432",
-      "status": "1",
-      "regionId": 2,
-      "regionPlace": "Samarqand vilayati",
-      "address": "23454",
-      "createdAt": "2024-10-15"
-    },
-    {
-      "id": "2953",
-      "key": 69,
-      "companyName": "wdfwert",
-      "inn": "232452",
+      "key": 17,
+      "companyName": "mohirjon",
+      "inn": "12345",
       "status": "2",
       "regionId": 2,
-      "regionPlace": "Samarqand vilayati",
-      "address": "234543",
-      "createdAt": "2024-10-09"
+      "address": "sw",
+      "createdAt": "2024-10-12",
+      "id": "48a9"
+    },
+    {
+      "key": 16,
+      "companyName": "1235u",
+      "inn": "123456789",
+      "status": "3",
+      "regionId": 2,
+      "address": "r45",
+      "createdAt": "2024-10-10",
+      "id": "7a4b"
     }
   ]
 }
